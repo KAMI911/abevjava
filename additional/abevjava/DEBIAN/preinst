@@ -1,0 +1,26 @@
+#!/bin/bash
+set -e
+
+ABEVJAVA_LIB="/usr/lib/abevjava"
+ABEVJAVA_MIGRATION="${ABEVJAVA_LIB}/migration"
+ABEVJAVA_SHARE="/usr/share/abevjava"
+ABEVJAVA_HELP="/usr/share/doc/abevjava"
+
+MIGRATION_DIRS=( abev eroforrasok nyomtatvanyok segitseg )
+
+for dir in ${MIGRATION_DIRS[@]}
+do
+    SOURCE_DIR=${ABEVJAVA_LIB}/${dir}
+    if [ -d "${SOURCE_DIR}" ]
+    then
+        if [ -L "${SOURCE_DIR}" ]
+        then
+            echo "The ${SOURCE_DIR} is symbolic link."
+        else
+            mkdir -p "${ABEVJAVA_MIGRATION}"
+            DESTINATION_DIR=`mktemp -d "${ABEVJAVA_MIGRATION}/${dir}-XXXXXX"`
+            echo "Migrating legacy abevjava files from ${SOURCE_DIR} to ${DESTINATION_DIR} ..."
+            mv "${SOURCE_DIR}" "${DESTINATION_DIR}"
+        fi
+    fi
+done

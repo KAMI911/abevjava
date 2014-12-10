@@ -1,0 +1,16 @@
+prop.usr.naplo=##HOME##/.abevjava/naplo
+prop.usr.kontroll=kontroll
+prop.usr.saves=mentesek
+prop.usr.tmp_calc=calc
+prop.usr.ds_sent=KR/elkuldott
+prop.usr.root=##HOME##/.abevjava/
+prop.usr.ds_dest=KR/kuldendo
+prop.usr.tmp=tmp
+prop.usr.frissitesek=##HOME##/.abevjava/frissitesek
+prop.usr.archive=archivum
+prop.usr.ds_src=KR/digitalis_alairas
+prop.usr.import=import
+prop.usr.settings=
+prop.usr.tmp_xml=xml
+prop.usr.attachment=csatolmanyok
+prop.usr.primaryaccounts=##HOME##/.abevjava/torzsadatok

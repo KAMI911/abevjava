@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+
+   <mime-type type="application/abevjava.xkr">
+      <comment>AbevJava XKR Document</comment>
+      <comment xml:lang="en">AbevJava XKR Document</comment>
+      <comment xml:lang="hu">AbevJava XKR dokumentum</comment>
+      <glob pattern="*.xkr"/>
+      <icon name="gtk-new"/>
+   </mime-type>
+
+   <mime-type type="application/abevjava.enyk.frm">
+      <comment>AbevJava ENYK Form Document</comment>
+      <comment xml:lang="en">AbevJava ENYK Form Document</comment>
+      <comment xml:lang="hu">AbevJava ENYK űrladokumentum</comment>
+      <glob pattern="*.frm.enyk"/>
+      <icon name="gtk-new"/>
+   </mime-type>
+
+   <mime-type type="application/abevjava.enyk.tem">
+      <comment>AbevJava ENYK Form Template</comment>
+      <comment xml:lang="en">AbevJava ENYK Form Template</comment>
+      <comment xml:lang="hu">AbevJava ENYK űrlasablon</comment>
+      <glob pattern="*.tem.enyk"/>
+      <icon name="gtk-new"/>
+   </mime-type>
+
+   <mime-type type="application/abevjava.dat">
+      <comment>AbevJava DAT Document</comment>
+      <comment xml:lang="en">AbevJava DAT Document</comment>
+      <comment xml:lang="hu">AbevJava DAT dokumentum</comment>
+      <glob pattern="*.dat"/>
+      <icon name="gtk-new"/>
+   </mime-type>
+
+   <mime-type type="application/abevjava.abv">
+      <comment>AbevJava ABV Document</comment>
+      <comment xml:lang="en">AbevJava ABV Document</comment>
+      <comment xml:lang="hu">AbevJava ABV dokumentum</comment>
+      <glob pattern="*.abv"/>
+      <icon name="gtk-new"/>
+   </mime-type>
+
+   <mime-type type="application/abevjava.xml">
+      <comment>AbevJava XML Document</comment>
+      <comment xml:lang="en">AbevJava XML Document</comment>
+      <comment xml:lang="hu">AbevJava XML dokumentum</comment>
+      <glob pattern="*.xml"/>
+      <icon name="gtk-new"/>
+   </mime-type>
+
+   <mime-type type="application/abevjava.imp">
+      <comment>AbevJava IMP Document</comment>
+      <comment xml:lang="en">AbevJava IMP Document</comment>
+      <comment xml:lang="hu">AbevJava IMP dokumentum</comment>
+      <glob pattern="*.imp"/>
+      <icon name="gtk-new"/>
+   </mime-type>
+
+   <mime-type type="application/abevjava.txt">
+      <comment>AbevJava ABV List Document</comment>
+      <comment xml:lang="en">AbevJava ABV List Document</comment>
+      <comment xml:lang="hu">AbevJava ABV listadokumentum</comment>
+      <glob pattern="*.txt"/>
+      <icon name="gtk-new"/>
+   </mime-type>
+
+</mime-info>

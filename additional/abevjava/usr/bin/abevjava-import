@@ -1,0 +1,3 @@
+#!/bin/bash
+
+abevjava "cmd:file.import $1"

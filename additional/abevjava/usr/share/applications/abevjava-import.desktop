@@ -1,0 +1,14 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=AbevJava - Általános Nyomtatványkitöltő importálás
+GenericName=AbevJava import
+GenericName[hu]=AbevJava importáló
+Comment=Általános Nyomtatványkitöltő - supplying of data for Hungarian public administration
+Comment[hu]=Általános Nyomtatványkitöltő - bevallások és adatszolgáltatások
+Exec=abevjava-import
+Icon=/usr/lib/abevjava/abevjava.ico
+Terminal=false
+Type=Application
+StartupNotify=true
+Version=1.0
+MimeType=application/abevjava.xkr,application/abevjava.dat,application/abevjava.abv,application/abevjava.xml,application/abevjava.imp,application/abevjava.txt

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=AbevJava - Általános Nyomtatványkitöltő megnyitás
+GenericName=AbevJava open
+GenericName[hu]=AbevJava megnyitás
+Comment=Általános Nyomtatványkitöltő - supplying of data for Hungarian public administration
+Comment[hu]=Általános Nyomtatványkitöltő - bevallások és adatszolgáltatások
+Exec=abevjava-open
+Icon=/usr/lib/abevjava/abevjava.ico
+Terminal=false
+Type=Application
+StartupNotify=true
+Version=1.0
+MimeType=application/abevjava.enyk.frm

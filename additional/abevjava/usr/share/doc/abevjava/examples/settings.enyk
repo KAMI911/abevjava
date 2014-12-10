@@ -1,0 +1,22 @@
+#AbevJava beállítások
+#Sun Feb 07 22:37:43 CET 2010
+printer.print.settings.enableps=n
+gui.fel\u00FCl\u00EDr\u00E1sm\u00F3d=true
+gui.mez\u0151ellen\u0151rz\u00E9s=true
+upgrade.proxy.pwd=
+upgrade.noshow=false
+upgrade.proxy.user=
+gui.mez\u0151sz\u00E1m\u00EDt\u00E1s=true
+gui.internet_browser=/usr/bin/firefox
+printer.print.settings.colors=12
+upgrade.proxy.enabled=false
+upgrade.proxy.authentication=false
+file_maszk.file_maszk_hasznalva=true
+GUI.zoom=100
+printer.print.settings.kozos=0
+upgrade.proxy.port=-1
+printer.print.settings.margin=2
+upgrade.autoupdate=true
+upgrade.proxy.host=
+gui.mez\u0151k\u00F3dkijelz\u00E9s=false
+file_maszk.file_maszk=nyomtatv\u00E1ny azonos\u00EDt\u00F3\#ad\u00F3sz\u00E1m vagy ad\u00F3azonos\u00EDt\u00F3 jel\#n\u00E9v (c\u00E9gn\u00E9v vagy szem\u00E9lyn\u00E9v)\#

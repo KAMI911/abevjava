@@ -1,0 +1,23 @@
+abevjava-import
+	command=abevjava-import
+	name=AbevJava Import
+	can_open_multiple_files=false
+	expects_uris=true
+	requires_terminal=false
+	mime_types=application/abevjava.xkr,application/abevjava.dat,application/abevjava.abv,application/abevjava.xml,application/abevjava.imp,application/abevjava.txt
+
+abevjava-multiimport
+	command=abevjava-multiimport
+	name=AbevJava Multi-Import
+	can_open_multiple_files=false
+	expects_uris=true
+	requires_terminal=false
+	mime_types=application/abevjava.txt
+
+abevjava-open
+	command=abevjava-open
+	name=AbevJava Open
+	can_open_multiple_files=false
+	expects_uris=true
+	requires_terminal=false
+	mime_types=application/abevjava.enyk.frm

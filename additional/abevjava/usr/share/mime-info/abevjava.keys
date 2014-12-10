@@ -1,0 +1,97 @@
+application/abevjava.xkr
+	description=AbevJava XKR Document
+	[en]description=AbevJava XKR Document
+	[hu]description=AbevJava XKR dokumentum
+	default_action_type=application
+	default_application_id=abevjava-import
+	short_list_application_user_additions=abevjava-import
+	short_list_application_ids_for_novice_user_level=abevjava-import
+	short_list_application_ids_for_intermediate_user_level=abevjava-import
+	short_list_application_ids_for_advanced_user_level=abevjava-import
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=/usr/lib/abevjava/abevjava.ico
+
+application/abevjava.enyk.frm
+	description=AbevJava ENYK Form Document
+	[en]description=AbevJava ENYK Form Document
+	[hu]description=AbevJava ENYK űrlapdokumentum
+	default_action_type=application
+	default_application_id=abevjava-open
+	short_list_application_user_additions=abevjava-open
+	short_list_application_ids_for_novice_user_level=abevjava-open
+	short_list_application_ids_for_intermediate_user_level=abevjava-open
+	short_list_application_ids_for_advanced_user_level=abevjava-open
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=/usr/lib/abevjava/abevjava.ico
+
+application/abevjava.dat
+	description=AbevJava DAT Document
+	[en]description=AbevJava DAT Document
+	[hu]description=AbevJava DAT dokumentum
+	default_action_type=application
+	default_application_id=abevjava-import
+	short_list_application_user_additions=abevjava-import
+	short_list_application_ids_for_novice_user_level=abevjava-import
+	short_list_application_ids_for_intermediate_user_level=abevjava-import
+	short_list_application_ids_for_advanced_user_level=abevjava-import
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=/usr/lib/abevjava/abevjava.ico
+
+application/abevjava.abv
+	description=AbevJava ABV Document
+	[en]description=AbevJava ABV Document
+	[hu]description=AbevJava ABV dokumentum
+	default_action_type=application
+	default_application_id=abevjava-import
+	short_list_application_user_additions=abevjava-import
+	short_list_application_ids_for_novice_user_level=abevjava-import
+	short_list_application_ids_for_intermediate_user_level=abevjava-import
+	short_list_application_ids_for_advanced_user_level=abevjava-import
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=/usr/lib/abevjava/abevjava.ico
+
+application/abevjava.xml
+	description=AbevJava XML Document
+	[en]description=AbevJava XML Document
+	[hu]description=AbevJava XML dokumentum
+	default_action_type=application
+	default_application_id=abevjava-import
+	short_list_application_user_additions=abevjava-import
+	short_list_application_ids_for_novice_user_level=abevjava-import
+	short_list_application_ids_for_intermediate_user_level=abevjava-import
+	short_list_application_ids_for_advanced_user_level=abevjava-import
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=/usr/lib/abevjava/abevjava.ico
+
+application/abevjava.imp
+	description=AbevJava IMP Document
+	[en]description=AbevJava IMP Document
+	[hu]description=AbevJava IMP dokumentum
+	default_action_type=application
+	default_application_id=abevjava-import
+	short_list_application_user_additions=abevjava-import
+	short_list_application_ids_for_novice_user_level=abevjava-import
+	short_list_application_ids_for_intermediate_user_level=abevjava-import
+	short_list_application_ids_for_advanced_user_level=abevjava-import
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=/usr/lib/abevjava/abevjava.ico
+
+application/abevjava.txt
+	description=AbevJava TXT List Document
+	[en]description=AbevJava TXT List Document
+	[hu]description=AbevJava TXT listadokumentum
+	default_action_type=application
+	default_application_id=abevjava-import,abevjava-multiimport
+	short_list_application_user_additions=abevjava-import,abevjava-multiimport
+	short_list_application_ids_for_novice_user_level=abevjava-import,abevjava-multiimport
+	short_list_application_ids_for_intermediate_user_level=abevjava-import,abevjava-multiimport
+	short_list_application_ids_for_advanced_user_level=abevjava-import,abevjava-multiimport
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=/usr/lib/abevjava/abevjava.ico
