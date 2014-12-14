@@ -8,7 +8,7 @@
  * @package  Abevjavaupgrade
  * @author   Kálmán „KAMI” Szalai <kami911@gmail.com>
  * @license  http://www.gnu.org/licenses/gpl.html GNU General Public License Version 3
- * @version  3.0.4
+ * @version  3.0.5
  * @link     http://ooo.itc.hu/
  */
 require_once dirname(__FILE__) . '/configuration.php';

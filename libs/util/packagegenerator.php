@@ -8,11 +8,12 @@
  * @package  Packagegenerator
  * @author   Kálmán „KAMI” Szalai <kami911@gmail.com>
  * @license  http://www.gnu.org/licenses/gpl.html GNU General Public License Version 3
- * @version  3.0.4
+ * @version  3.0.5
  * @link     http://ooo.itc.hu/
  */
 
 require_once dirname(__FILE__) . '/database.php';
+require_once dirname(__FILE__) . '/generatereport.php';
 
 class PackageGenerator {
     
@@ -23,14 +24,16 @@ class PackageGenerator {
     // database handler
     private $_db;
     private $_checkdir;
+    private $_report;
 
     public function __construct( $host , $port , $username , $password , $database ) {
         try {
-            $this->_db = new Database( $host , $port , $username , $password , $database );
+            $this -> _db = new Database( $host , $port , $username , $password , $database );
         }
         catch (Exception $e) {
             echo 'Could not connect to database: ' . $e->getMessage();
             exit(1);
+	$this -> _report = new GenerateReport;
         }
     }
 
@@ -49,6 +52,7 @@ class PackageGenerator {
             $_pck -> CreatePackage( $target, $force );
             //$_pck -> View();
             $_pck -> Close();
+	    $this -> _report -> IncreaseNew( $v['short_name'], $v['version_major'] . '.' . $v['version_minor'] . '.' . $v['version_micro'] . '.' . $v['version_build'], $v['description'] , $v['company_name']);
         }
     }
 
@@ -62,12 +66,14 @@ class PackageGenerator {
                 $_pck -> CreatePackage( $target , TRUE );
                 //$_pck -> View();
                 $_pck -> Close();
+	    	$this -> _report -> IncreaseNew( $v['short_name'], $v['version_major'] . '.' . $v['version_minor'] . '.' . $v['version_micro'] . '.' . $v['version_build'], $v['description'] , $v['company_name']);
                 $this -> _checkdir -> Close();
             }
         }
     }
 
     public function Close() {
+	$this -> _report -> View;
         $this -> __destruct();
     }
 

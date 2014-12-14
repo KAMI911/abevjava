@@ -8,7 +8,7 @@
  * @package  GenerateReport
  * @author   Kálmán „KAMI” Szalai <kami911@gmail.com>
  * @license  http://www.gnu.org/licenses/gpl.html GNU General Public License Version 3
- * @version  3.0.5
+ * @version  3.0.6
  * @link     http://ooo.itc.hu/
  */
 
@@ -35,16 +35,16 @@ class GenerateReport {
       $this -> $_forms[$type][] = $form;
     }
     
-    public function IncreaseNew($short_name) {
-      $this -> Increase('new', $short_name);
+    public function IncreaseNew($short_name, $version, $description, $company_name) {
+      $this -> Increase('new', array($short_name, $version, $description, $company_name));
     }
 
-    public function IncreaseUpdated($short_name) {
-      $this -> Increase('updated', $short_name);
+    public function IncreaseUpdated($short_name, $version, $description, $company_name) {
+      $this -> Increase('updated', array($short_name, $version, $description, $company_name));
     }
 
-    public function IncreaseRereleased($short_name) {
-      $this -> Increase('rereleased', $short_name);
+    public function IncreaseRereleased($short_name, $version, $description, $company_name) {
+      $this -> Increase('rereleased', array($short_name, $version, $description, $company_name));
     }
 
     public function View()
