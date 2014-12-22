@@ -57,7 +57,7 @@ INSERT INTO `company` (`coid`, `state`, `company_name`, `company_short_name`, `u
 (3, 'disable','Vám- és Pénzügyőrség',                                                            'vpop',      'http://vam.gov.hu/ado/automata/update.xml'),
 (4, 'enable', 'Közigazgatási és Igazságügyi Minisztérium',                                       'ceginfo',   'http://e-beszamolo.kim.gov.hu/download/urlapok/verzio.xml'),
 (5, 'disable','Pénzügyi Szervezetek Állami Felügyelete',                                         'pszaf',     'http://apps.pszaf.hu/nyomtatvanyok/verziok.xml'),
-(6, 'disabée','Országos Rendőr-főkapitányság ',                                                  'orfk',      'http://www.police.hu/abev/ORFK_nyomt.xml'),
+(6, 'disable','Országos Rendőr-főkapitányság ',                                                  'orfk',      'http://www.police.hu/abev/ORFK_nyomt.xml'),
 (7, 'disable','Környezetvédelmi és Vízügyi Minisztérium',                                        'kvvm',      'http://support.kvvm.hu/kvvm_nykinfo.xml'),
 (8, 'enable', 'Nemzeti Adó- és Vámhivatal',                                                      'nav',       'http://www.nav.gov.hu/abev/abev_new'),
 (9, 'enable', 'Gyomaendrőd Önkormányzat Polgármesteri Hivatala',                                 'gyeonkphiv','http://www.gyomaendrod.hu/onkormanyzati_rendeletek/ugyintezes/verzio.xml'),
