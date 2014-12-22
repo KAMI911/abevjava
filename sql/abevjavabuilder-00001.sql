@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `company` (
 INSERT INTO `company` (`coid`, `state`, `company_name`, `company_short_name`, `url`) VALUES
 (1,		'disable',	'KAMI',																				'kami',			'http://ooop.itc.hu/'),
 (2,		'disable',	'Nemzeti Adó- és Vámhivatal',														'apeh',			'http://www.nav.gov.hu/abev/abev_new'),
-(3,		'enable',	'Vám- és Pénzügyőrség',																'vpop',			'http://vam.gov.hu/ado/automata/update.xml'),
+(3,		'disable',	'Vám- és Pénzügyőrség',																'vpop',			'http://vam.gov.hu/ado/automata/update.xml'),
 (4,		'enable',	'Közigazgatási és Igazságügyi Minisztérium',										'ceginfo',		'http://e-beszamolo.kim.gov.hu/download/urlapok/verzio.xml'),
 (5,		'enable',	'Pénzügyi Szervezetek Állami Felügyelete',											'pszaf',		'http://apps.pszaf.hu/nyomtatvanyok/verziok.xml'),
 (6,		'enable',	'Országos Rendőr-főkapitányság ',													'orfk',			'http://www.police.hu/abev/ORFK_nyomt.xml'),

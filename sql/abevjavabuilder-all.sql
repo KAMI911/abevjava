@@ -52,32 +52,34 @@ CREATE TABLE IF NOT EXISTS `company` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci AUTO_INCREMENT=1 ;
 
 INSERT INTO `company` (`coid`, `state`, `company_name`, `company_short_name`, `url`) VALUES
-(1,		'disable',	'KAMI',																				'kami',			'http://ooop.itc.hu/'),
-(2,		'disable',	'Nemzeti Adó- és Vámhivatal',														'apeh',			'http://www.nav.gov.hu/abev/abev_new'),
-(3,		'enable',	'Vám- és Pénzügyőrség',																'vpop',			'http://vam.gov.hu/ado/automata/update.xml'),
-(4,		'enable',	'Közigazgatási és Igazságügyi Minisztérium',										'ceginfo',		'http://e-beszamolo.kim.gov.hu/download/urlapok/verzio.xml'),
-(5,		'enable',	'Pénzügyi Szervezetek Állami Felügyelete',											'pszaf',		'http://apps.pszaf.hu/nyomtatvanyok/verziok.xml'),
-(6,		'enable',	'Országos Rendőr-főkapitányság ',													'orfk',			'http://www.police.hu/abev/ORFK_nyomt.xml'),
-(7,		'enable',	'Környezetvédelmi és Vízügyi Minisztérium',											'kvvm',			'http://support.kvvm.hu/kvvm_nykinfo.xml'),
-(8,		'enable',	'Nemzeti Adó- és Vámhivatal',														'nav',			'http://www.nav.gov.hu/abev/abev_new'),
-(9,		'enable',	'Gyomaendrőd Önkormányzat Polgármesteri Hivatala',									'gyeonkphiv',	'http://www.gyomaendrod.hu/onkormanyzati_rendeletek/ugyintezes/verzio.xml'),
-(10,	'enable',	'Kaposvár Megyei Jogú Város Polgármesteri Hivatal',									'sbaty',		'http://w3.kaposvar.hu/adobevallas/verzio.xml'),
-(11,	'enable',	'Kadarkút Város Polgármesteri Hivatala',											'kkut',			'http://www.kadarkutph.hu/eugyint/KKUTverzio.xml'),
-(12,	'enable',	'Országos Atomenergia Hivatal',														'oah',			'http://www.haea.gov.hu/nyomtatvany/verziok.xml'),
-(13,	'disable',	'Budapest Főváros XXIII. kerület Soroksár Önkormányzatának Polgármesteri Hivatala',	'bpxxiii',		'http://www.ph.soroksar.hu/urlapok/verzio.xml'),
-(14,	'enable',	'Komárom Önkormányzat Polgármesteri Hivatala',										'komarom',		'http://www.komarom.hu/anyk/nyomtatvany_verzio.xml'),
-(15,	'disable',	'Magyar Posta Zártkörűen Működő Részvénytársaság',									'mpzrt',		'http://posta.hu/ugyfelszolgalat/nyomtatvanyok_urlapok/elektronikus_urlap_adatfrissites/MPZRTurlapfrissites.xml'),
-(16,	'enable',	'Polgármesteri Hivatal Martfű',														'pmhmartfu',	'http://www.martfu.hu/eugyintezes/update.xml'),
-(17,	'enable',	'Miniszterelnöki Hivatal',															'krtar',		'http://nevjegyzek.magyarorszag.hu/resources/verzio.xml'),
-(18,	'enable',	'Mórahalom Önkormányzat Polgármesteri Hivatala',									'morahalom',	'http://web.morahalom.hu/anyk/verzio.xml'),
-(19,	'disable',	'Közigazgatási és Elektronikus Közszolgálatások Központi Hivatala',					'kekkh',		'http://www.nyilvantarto.hu/'),
-(20,	'enable',	'Országos Bírósági Hivatal',														'obhgepi',		'http://csc.birosag.hu/ANYKpub/anykverziok.xml'),
-(21,	'enable',	'Füzesabony Önkormányzat Polgármesteri Hivatala',									'fabonyph',		'http://www.fuzesabony.hu/anyk/verzio.xml'),
-(22,	'enable',	'Országos Egészségbiztosítási Pénztár',												'oep',			'http://hkp.oep.hu/nyomtatvanyok'),
-(23,	'enable',	'Mezőgazdasági Szakigazgatási Hivatal',												'mgszh',		'http://www.nebih.gov.hu/data/cms/130/239/abev.xml'),
-(24,	'enable',	'Magyar Államkincstár',																'mak',		'http://www.allamkincstar.gov.hu/letoltesek/4578');
+(1, 'disable','KAMI',                                                                            'kami',      'http://ooop.itc.hu/'),
+(2, 'disable','Nemzeti Adó- és Vámhivatal',                                                      'apeh',      'http://www.nav.gov.hu/abev/abev_new'),
+(3, 'disable','Vám- és Pénzügyőrség',                                                            'vpop',      'http://vam.gov.hu/ado/automata/update.xml'),
+(4, 'enable', 'Közigazgatási és Igazságügyi Minisztérium',                                       'ceginfo',   'http://e-beszamolo.kim.gov.hu/download/urlapok/verzio.xml'),
+(5, 'disable','Pénzügyi Szervezetek Állami Felügyelete',                                         'pszaf',     'http://apps.pszaf.hu/nyomtatvanyok/verziok.xml'),
+(6, 'disabée','Országos Rendőr-főkapitányság ',                                                  'orfk',      'http://www.police.hu/abev/ORFK_nyomt.xml'),
+(7, 'disable','Környezetvédelmi és Vízügyi Minisztérium',                                        'kvvm',      'http://support.kvvm.hu/kvvm_nykinfo.xml'),
+(8, 'enable', 'Nemzeti Adó- és Vámhivatal',                                                      'nav',       'http://www.nav.gov.hu/abev/abev_new'),
+(9, 'enable', 'Gyomaendrőd Önkormányzat Polgármesteri Hivatala',                                 'gyeonkphiv','http://www.gyomaendrod.hu/onkormanyzati_rendeletek/ugyintezes/verzio.xml'),
+(10,'enable', 'Kaposvár Megyei Jogú Város Polgármesteri Hivatal',                                'sbaty',     'http://w3.kaposvar.hu/adobevallas/verzio.xml'),
+(11,'enable', 'Kadarkút Város Polgármesteri Hivatala',                                           'kkut',      'http://www.kadarkutph.hu/eugyint/KKUTverzio.xml'),
+(12,'enable', 'Országos Atomenergia Hivatal',                                                    'oah',       'http://www.haea.gov.hu/nyomtatvany/verziok.xml'),
+(13,'disable','Budapest Főváros XXIII. kerület Soroksár Önkormányzatának Polgármesteri Hivatala','bpxxiii',   'http://www.ph.soroksar.hu/urlapok/verzio.xml'),
+(14,'enable', 'Komárom Önkormányzat Polgármesteri Hivatala',                                     'komarom',   'http://www.komarom.hu/anyk/nyomtatvany_verzio.xml'),
+(15,'disable','Magyar Posta Zártkörűen Működő Részvénytársaság',                                 'mpzrt',     'http://posta.hu/ugyfelszolgalat/nyomtatvanyok_urlapok/elektronikus_urlap_adatfrissites/MPZRTurlapfrissites.xml'),
+(16,'enable', 'Polgármesteri Hivatal Martfű',                                                    'pmhmartfu', 'http://www.martfu.hu/eugyintezes/update.xml'),
+(17,'enable', 'Miniszterelnöki Hivatal',                                                         'krtar',     'http://nevjegyzek.magyarorszag.hu/resources/verzio.xml'),
+(18,'enable', 'Mórahalom Önkormányzat Polgármesteri Hivatala',                                   'morahalom', 'http://web.morahalom.hu/anyk/verzio.xml'),
+(19,'disable','Közigazgatási és Elektronikus Közszolgálatások Központi Hivatala',                'kekkh',     'http://www.nyilvantarto.hu/'),
+(20,'enable', 'Országos Bírósági Hivatal',                                                       'obhgepi',   'http://csc.birosag.hu/ANYKpub/anykverziok.xml'),
+(21,'enable', 'Füzesabony Önkormányzat Polgármesteri Hivatala',                                  'fabonyph',  'http://www.fuzesabony.hu/anyk/verzio.xml'),
+(22,'enable', 'Országos Egészségbiztosítási Pénztár',                                            'oep',       'http://hkp.oep.hu/nyomtatvanyok'),
+(23,'enable', 'Mezőgazdasági Szakigazgatási Hivatal',                                            'mgszh',     'http://www.nebih.gov.hu/data/cms/130/239/abev.xml'),
+(24,'enable', 'Magyar Államkincstár',                                                            'mak',       'http://www.allamkincstar.gov.hu/letoltesek/4578'),
+(25,'enable', 'Magyar Nemzeti Bank',                                                             'mnb',       'https://apps.mnb.hu/nyomtatvanyok/verziok.xml'),
+(26,'enable', 'Magyar Energetikai és Közmű-szabályozási Hivatal',                                'mekh',      'http://www.mekh.hu/gcpdocs/szarm_gar/update.xml');
 
--- (1,	'enable',	'',														'',	'');
+
 -- --------------------------------------------------------
 
 --
