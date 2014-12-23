@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Processing XML file and put data into database
  *
@@ -23,38 +24,35 @@ require_once dirname(__FILE__) . '/libs/util/sha1dir.php';
 
 
 try {
-    /**
-     * Parse the ABEVJAVA datasources and put them into the database
-     *
-     */
-    $xml2db = new XMLtoDataBase(
-        DB_HOST, DB_PORT, DB_USERNAME, DB_PASSWORD, DB_DATABASE
-    );
-    $xml2db->import();
-    $xml2db->close();
-}
-catch (Exception $error) {
-    echo '[!] Problems occured during xml to database import phase.' . $error->getMessage() . PHP_EOL;
-    exit(1);
+  /**
+   * Parse the ABEVJAVA datasources and put them into the database
+   *
+   */
+  $xml2db = new XMLtoDataBase(
+	  DB_HOST, DB_PORT, DB_USERNAME, DB_PASSWORD, DB_DATABASE
+  );
+  $xml2db->import();
+  $xml2db->close();
+} catch (Exception $error) {
+  echo '[!] Problems occured during xml to database import phase.' . $error->getMessage() . PHP_EOL;
+  exit(1);
 }
 
 try {
-    /**
-     * Read the database and genererate packages from it
-     *
-     */
-    $xml2db = new PackageGenerator(
-        DB_HOST, DB_PORT, DB_USERNAME, DB_PASSWORD, DB_DATABASE
-    );
-    $xml2db->generate();
-    $xml2db->close();
+  /**
+   * Read the database and genererate packages from it
+   *
+   */
+  $xml2db = new PackageGenerator(
+	  DB_HOST, DB_PORT, DB_USERNAME, DB_PASSWORD, DB_DATABASE
+  );
+  $xml2db->generate();
+  $xml2db->close();
+} catch (Exception $error) {
+  echo '[!] Problems occured during package generation phase.' . $error->getMessage() . PHP_EOL;
+  exit(1);
 }
-catch (Exception $error) {
-    echo '[!] Problems occured during package generation phase.' . $error->getMessage() . PHP_EOL;
-    exit(1);
-}
-    system('rm -fr ' . TEMP_PATH, $output);                
-    echo '[.] Finished, exiting, and go home.' . PHP_EOL;
-
+system('rm -fr ' . TEMP_PATH, $output);
+echo '[.] Finished, exiting, and go home.' . PHP_EOL;
 ?>
 

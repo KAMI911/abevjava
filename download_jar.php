@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Downloading JAR files
  *
@@ -35,51 +36,49 @@ $urls[1]['url_prefix'] = 'http://www.nyilvantarto.hu/';
 $doc = new DOMDocument();
 
 unset($requested_links);
-$i=0;
+$i = 0;
 
 foreach ($urls as $index => $data) {
-    $doc->loadHTMLFile($data['url']);
-    $links=$doc->getElementsByTagName('a'); 
+  $doc->loadHTMLFile($data['url']);
+  $links = $doc->getElementsByTagName('a');
 
-    foreach ($links as $link) {
-        $mylink = $link->getAttribute('href');
-        if (  stristr($mylink, '.jar') ) {
-            $requested_link[$i]['url'] = $data['url_prefix'] . $mylink;
-            $requested_link[$i]['description'] = File::CorrectDescription($link->nodeValue);
-            $tmp_name = explode('.jar', basename($mylink));
-            $requested_link[$i]['short_name'] = File::ShortnameNormalizer($tmp_name[0]);
+  foreach ($links as $link) {
+    $mylink = $link->getAttribute('href');
+    if (stristr($mylink, '.jar')) {
+      $requested_link[$i]['url'] = $data['url_prefix'] . $mylink;
+      $requested_link[$i]['description'] = File::CorrectDescription($link->nodeValue);
+      $tmp_name = explode('.jar', basename($mylink));
+      $requested_link[$i]['short_name'] = File::ShortnameNormalizer($tmp_name[0]);
 
-            $requested_link[$i]['company'] = $data['company'];
-            $requested_link[$i]['category_id'] = $data['category_id'];
+      $requested_link[$i]['company'] = $data['company'];
+      $requested_link[$i]['category_id'] = $data['category_id'];
 
-            $requested_link[$i]['version_major'] = $default['version_major'];
-            $requested_link[$i]['version_minor'] = $default['version_minor'];
-            $requested_link[$i]['version_micro'] = $default['version_micro'];
-            $requested_link[$i]['version_build'] = $default['version_build'];
+      $requested_link[$i]['version_major'] = $default['version_major'];
+      $requested_link[$i]['version_minor'] = $default['version_minor'];
+      $requested_link[$i]['version_micro'] = $default['version_micro'];
+      $requested_link[$i]['version_build'] = $default['version_build'];
 
-            $i++;
-        }
+      $i++;
     }
+  }
 }
 
 try {
-    /**
-     * Parse the ABEVJAVA datasources and put them into the database
-     *
-     */
-    $html2db = new XMLtoDataBase(DB_HOST, DB_PORT, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
-    foreach ($requested_link as $index => $record) {
-        $html2db->AddRecord($record);
-    }
-    $html2db->ViewFormData();
-    $html2db->put();
-    $html2db->close();
-}
-catch (Exception $error) {
-    echo '[!] Problems occured during xml to database import phase.' . $error->getMessage() . PHP_EOL;
-    exit(1);
+  /**
+   * Parse the ABEVJAVA datasources and put them into the database
+   *
+   */
+  $html2db = new XMLtoDataBase(DB_HOST, DB_PORT, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
+  foreach ($requested_link as $index => $record) {
+    $html2db->AddRecord($record);
+  }
+  $html2db->ViewFormData();
+  $html2db->put();
+  $html2db->close();
+} catch (Exception $error) {
+  echo '[!] Problems occured during xml to database import phase.' . $error->getMessage() . PHP_EOL;
+  exit(1);
 }
 
 print_r($requested_link);
-
 ?>
