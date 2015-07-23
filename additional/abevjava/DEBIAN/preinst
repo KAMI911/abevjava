@@ -10,17 +10,17 @@ MIGRATION_DIRS=( abev eroforrasok nyomtatvanyok segitseg )
 
 for dir in ${MIGRATION_DIRS[@]}
 do
-    SOURCE_DIR=${ABEVJAVA_LIB}/${dir}
-    if [ -d "${SOURCE_DIR}" ]
+  SOURCE_DIR=${ABEVJAVA_LIB}/${dir}
+  if [ -d "${SOURCE_DIR}" ]
+  then
+    if [ -L "${SOURCE_DIR}" ]
     then
-        if [ -L "${SOURCE_DIR}" ]
-        then
-            echo "The ${SOURCE_DIR} is symbolic link."
-        else
-            mkdir -p "${ABEVJAVA_MIGRATION}"
-            DESTINATION_DIR=`mktemp -d "${ABEVJAVA_MIGRATION}/${dir}-XXXXXX"`
-            echo "Migrating legacy abevjava files from ${SOURCE_DIR} to ${DESTINATION_DIR} ..."
-            mv "${SOURCE_DIR}" "${DESTINATION_DIR}"
-        fi
+      echo "The ${SOURCE_DIR} is symbolic link."
+    else
+      mkdir -p "${ABEVJAVA_MIGRATION}"
+      DESTINATION_DIR=`mktemp -d "${ABEVJAVA_MIGRATION}/${dir}-XXXXXX"`
+      echo "Migrating legacy abevjava files from ${SOURCE_DIR} to ${DESTINATION_DIR} ..."
+      mv "${SOURCE_DIR}" "${DESTINATION_DIR}"
     fi
+  fi
 done

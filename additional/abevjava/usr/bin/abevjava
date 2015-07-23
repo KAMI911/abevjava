@@ -11,12 +11,12 @@ ETC=/etc/abevjava
 
 if [ -f "$HOME/.config/user-dirs.dirs" ] ;
 then
-	. $HOME/.config/user-dirs.dirs
-	KRDIR="$XDG_DOCUMENTS_DIR/$ABEVJAVA_SEND_DIR"
-	mkdir -p --mode=750 "$KRDIR"
+  . $HOME/.config/user-dirs.dirs
+  KRDIR="$XDG_DOCUMENTS_DIR/$ABEVJAVA_SEND_DIR"
+  mkdir -p --mode=750 "$KRDIR"
 else
-	KRDIR="$HOME/$ABEVJAVA_SEND_DIR"
-	mkdir -p --mode=750 "$KRDIR"
+  KRDIR="$HOME/$ABEVJAVA_SEND_DIR"
+  mkdir -p --mode=750 "$KRDIR"
 fi
 
 export KRDIR="$KRDIR"
@@ -28,19 +28,18 @@ mkdir -p --mode=750 "$ABEVJAVA_HOME"
 cd  "$ABEVJAVA_HOME"
 
 cp -n "$ABEVJAVA_HELP/examples/settings.enyk" "$ABEVJAVA_SETTINGS"
-	chmod 664 "$ABEVJAVA_SETTINGS"
+  chmod 664 "$ABEVJAVA_SETTINGS"
 
 if [ ! -f "$ABEVJAVA_USER_CONF" ];
 then
-	cp "$ABEVJAVA_HELP/examples/user.enyk"     "$ABEVJAVA_USER_CONF"
-	sed -i "s|##HOME##|$HOME|g" "$ABEVJAVA_USER_CONF"
-	chmod 664 "$ABEVJAVA_USER_CONF"
+  cp "$ABEVJAVA_HELP/examples/user.enyk"     "$ABEVJAVA_USER_CONF"
+  sed -i "s|##HOME##|$HOME|g" "$ABEVJAVA_USER_CONF"
+  chmod 664 "$ABEVJAVA_USER_CONF"
 fi
 
 for HOMEDIRS in archivum csatolmanyok frissitesek import kontroll mentesek naplo torzsadatok tmp/calc tmp/xml
-
 do
-	mkdir -p --mode=750 "$HOMEDIRS"
+  mkdir -p --mode=750 "$HOMEDIRS"
 done
 
 cd $CURRENTDIR

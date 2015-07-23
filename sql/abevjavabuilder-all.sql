@@ -55,7 +55,7 @@ INSERT INTO `company` (`coid`, `state`, `company_name`, `company_short_name`, `u
 (1, 'disable','KAMI',                                                                            'kami',      'http://ooop.itc.hu/'),
 (2, 'disable','Nemzeti Adó- és Vámhivatal',                                                      'apeh',      'http://www.nav.gov.hu/abev/abev_new'),
 (3, 'disable','Vám- és Pénzügyőrség',                                                            'vpop',      'http://vam.gov.hu/ado/automata/update.xml'),
-(4, 'enable', 'Közigazgatási és Igazságügyi Minisztérium',                                       'ceginfo',   'http://e-beszamolo.kim.gov.hu/download/urlapok/verzio.xml'),
+(4, 'disable', 'Közigazgatási és Igazságügyi Minisztérium',                                      'ceginfo',   'http://e-beszamolo.kim.gov.hu/download/urlapok/verzio.xml'),
 (5, 'disable','Pénzügyi Szervezetek Állami Felügyelete',                                         'pszaf',     'http://apps.pszaf.hu/nyomtatvanyok/verziok.xml'),
 (6, 'disable','Országos Rendőr-főkapitányság ',                                                  'orfk',      'http://www.police.hu/abev/ORFK_nyomt.xml'),
 (7, 'disable','Környezetvédelmi és Vízügyi Minisztérium',                                        'kvvm',      'http://support.kvvm.hu/kvvm_nykinfo.xml'),
@@ -77,7 +77,8 @@ INSERT INTO `company` (`coid`, `state`, `company_name`, `company_short_name`, `u
 (23,'enable', 'Mezőgazdasági Szakigazgatási Hivatal',                                            'mgszh',     'http://www.nebih.gov.hu/data/cms/130/239/abev.xml'),
 (24,'enable', 'Magyar Államkincstár',                                                            'mak',       'http://www.allamkincstar.gov.hu/letoltesek/4578'),
 (25,'enable', 'Magyar Nemzeti Bank',                                                             'mnb',       'https://apps.mnb.hu/nyomtatvanyok/verziok.xml'),
-(26,'enable', 'Magyar Energetikai és Közmű-szabályozási Hivatal',                                'mekh',      'http://www.mekh.hu/gcpdocs/szarm_gar/update.xml');
+(26,'enable', 'Magyar Energetikai és Közmű-szabályozási Hivatal',                                'mekh',      'http://www.mekh.hu/gcpdocs/szarm_gar/update.xml'),
+(27,'enable', 'Hódmezovásárhely Önkormányzat Polgármesteri Hivatala',                            'hmvpmh',    'http://lgtnet.dyndns.hu/Letoltes/Verzio.xmls');
 
 
 -- --------------------------------------------------------
