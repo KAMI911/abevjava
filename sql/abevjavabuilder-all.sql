@@ -78,7 +78,8 @@ INSERT INTO `company` (`coid`, `state`, `company_name`, `company_short_name`, `u
 (24,'enable', 'Magyar Államkincstár',                                                            'mak',       'http://www.allamkincstar.gov.hu/letoltesek/4578'),
 (25,'enable', 'Magyar Nemzeti Bank',                                                             'mnb',       'https://apps.mnb.hu/nyomtatvanyok/verziok.xml'),
 (26,'enable', 'Magyar Energetikai és Közmű-szabályozási Hivatal',                                'mekh',      'http://www.mekh.hu/gcpdocs/szarm_gar/update.xml'),
-(27,'enable', 'Hódmezovásárhely Önkormányzat Polgármesteri Hivatala',                            'hmvpmh',    'http://lgtnet.dyndns.hu/Letoltes/Verzio.xmls');
+(27,'enable', 'Hódmezovásárhely Önkormányzat Polgármesteri Hivatala',                            'hmvpmh',    'http://lgtnet.dyndns.hu/Letoltes/Verzio.xmls'),
+(28,'enable', 'Országos Nyugdíjbiztosítási Főigazgatóság',                                       'onyfebpenz','http://egbiztpenzbeli.tcs.allamkincstar.gov.hu/images/epel/nyomtatvanyok/update.xml');
 
 
 -- --------------------------------------------------------
