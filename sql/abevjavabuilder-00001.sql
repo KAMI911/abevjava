@@ -11,7 +11,9 @@ SET time_zone = "+00:00";
 -- Database: `abevjavabuilder`
 --
 
-CREATE DATABASE `abevjavabuilder` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE IF NOT EXISTS `abevjavabuilder` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+USE `abevjavabuilder`;
 
 -- --------------------------------------------------------
 
