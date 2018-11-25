@@ -9,5 +9,5 @@ php:
  - 7.2
  - hhvm
 
-script:phplint
+script:
  - find . -name "*.php" -exec php -l {} \;
